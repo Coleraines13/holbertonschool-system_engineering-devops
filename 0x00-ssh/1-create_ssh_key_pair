@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #this creates a private key pair
 
-ssh-keygen -b 4069 -N betty -f school
+ssh-keygen -b 4069 -n betty -f school
