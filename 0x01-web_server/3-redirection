@@ -1,0 +1,11 @@
+#!/usr/bin/bash env
+#this will congif nginx so that it reditrects to another page
+
+ADD301_REDIRECT="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=Mq_wZE93ZAY permanent;"
+
+sudo apt-get update
+sudo apt-get install -y nginx
+sudo chown -R ubuntu /var/www
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+sudo sed -i "30i $ADD301_REDIRECT" /etc/nginx/sites-available/default
+sudo service nginx restart
