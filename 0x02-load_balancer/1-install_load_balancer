@@ -2,7 +2,7 @@
 #this installs and vonfigures HAproxy on your server
 
 sudo apt-get -y update
-sudo apt-get -y upgrade
+#sudo apt-get -y upgrade
 sudo apt-get -y install haproxy
 
 sudo chown -R ubuntu /etc/haproxy
