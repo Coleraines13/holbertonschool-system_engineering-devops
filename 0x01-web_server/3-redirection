@@ -1,4 +1,4 @@
-#!/usr/bin/bash env
+#!/usr/bin/env bash
 #this will congif nginx so that it reditrects to another page
 
 ADD301_REDIRECT="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=Mq_wZE93ZAY permanent;"
